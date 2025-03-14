@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MP2315SGJ-P
+D Switching Voltage Regulators 3A 24V Hi Effc.Sync Step Down Converter
+K
+F https://www.monolithicpower.com/pub/media/document/MP2315S_r1.0.pdf
+$ENDCMP
+#
+#End Doc Library
