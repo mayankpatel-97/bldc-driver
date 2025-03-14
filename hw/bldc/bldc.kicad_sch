@@ -5253,6 +5253,49 @@
 		)
 		(uuid "ff81d0fe-ca11-42ef-b435-6ff7fbf65d52")
 	)
+	(text "TIM_CH1\nTIM_CH1N\n"
+		(exclude_from_sim no)
+		(at 154.178 36.576 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1a4f2c81-c78a-4a6a-a027-81ff5fbd5c4e")
+	)
+	(text "TO DO\n=====================================================================\n* Measure VDC\n* Choose which mode do you wanna use\n	- power control mode\n	- back emf\n	- hal sensor based(not recomended)\n* stm32l431 costs only 256 rupees\n* Add capacitors on supply rail\n* connect 10V suppy with MOS driver,So esc can work at 36V\n* Add CAN"
+		(exclude_from_sim no)
+		(at 2.54 -27.94 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+			)
+			(justify left)
+		)
+		(uuid "5b72682d-e545-455e-9dfb-65c394330387")
+	)
+	(text "TIM_CH2\nTIM_CH2N\n"
+		(exclude_from_sim no)
+		(at 151.13 89.408 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a499bb5e-fb9e-4204-84b2-8966bc218c96")
+	)
+	(text "TIM_CH3\nTIM_CH3N\n"
+		(exclude_from_sim no)
+		(at 148.844 139.192 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ddef5593-dbae-4135-8ee4-c7db480df5a2")
+	)
 	(label "PHASE_C"
 		(at 223.52 143.51 180)
 		(fields_autoplaced yes)
