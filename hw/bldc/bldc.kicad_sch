@@ -4927,6 +4927,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 173.99) (xy 30.48 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4358ab5c-323e-4719-a027-14b250e05951")
+	)
+	(wire
+		(pts
 			(xy 60.96 146.05) (xy 72.39 146.05)
 		)
 		(stroke
@@ -5874,6 +5884,16 @@
 			(type default)
 		)
 		(uuid "ae118ae0-8576-4eff-8933-6d3c16f6b114")
+	)
+	(wire
+		(pts
+			(xy 27.94 168.91) (xy 30.48 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aecd0283-c389-4e4f-9284-f4d4808a98df")
 	)
 	(wire
 		(pts
@@ -7405,6 +7425,72 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
+		(at 27.94 173.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "07024151-f092-4f18-a182-09a035bc4df7")
+		(property "Reference" "TP11"
+			(at 22.86 175.2601 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 22.86 172.7201 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 27.94 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 27.94 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "99136f0a-3b69-435f-b9c6-214dbecdcb67")
+		)
+		(instances
+			(project "bldc"
+				(path "/8f50835c-fbe0-401c-8ea4-1e9972c1e8f7"
+					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
 		(at 29.21 73.66 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8423,6 +8509,72 @@
 			(project "bldc"
 				(path "/8f50835c-fbe0-401c-8ea4-1e9972c1e8f7"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 27.94 168.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "386efdd0-3842-4f00-9a84-6011a20a2ad1")
+		(property "Reference" "TP10"
+			(at 22.86 170.1801 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 22.86 167.6401 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 27.94 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 27.94 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "47431c4d-d3b8-4c61-a307-fbe1a45b96a8")
+		)
+		(instances
+			(project "bldc"
+				(path "/8f50835c-fbe0-401c-8ea4-1e9972c1e8f7"
+					(reference "TP10")
 					(unit 1)
 				)
 			)
