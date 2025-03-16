@@ -29,5 +29,8 @@ There are multiple ways to drive a BLDC motor. The three most common methods are
 - **UART Interface** for debugging and configuration
 - In the next varient, one board would have the driver for all the 4 motors required for quad copter.
 
+## PCB information 
+- Generated gerber files are in gerber folder of the project directory
+- PCB file size: 54x29 mm.
 
 
