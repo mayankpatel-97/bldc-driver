@@ -4727,16 +4727,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 176.53) (xy 30.48 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29541ae9-d6e3-4768-9465-f322c4d344d2")
-	)
-	(wire
-		(pts
 			(xy 214.63 93.98) (xy 214.63 97.79)
 		)
 		(stroke
@@ -5034,6 +5024,16 @@
 			(type default)
 		)
 		(uuid "550cfde0-99a1-4844-af72-7946e1ab42aa")
+	)
+	(wire
+		(pts
+			(xy 67.31 140.97) (xy 60.96 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "552b2984-554b-47ac-9d88-2e45447f4216")
 	)
 	(wire
 		(pts
@@ -6728,17 +6728,6 @@
 		)
 		(uuid "0458ef16-2ce7-4a70-9b06-60fca896687b")
 	)
-	(label "TIM1_CH3"
-		(at 158.75 137.16 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0bc48a87-ccfc-430b-9f87-e33759dd9c75")
-	)
 	(label "PHASE_C"
 		(at 223.52 142.24 180)
 		(fields_autoplaced yes)
@@ -6772,6 +6761,17 @@
 		)
 		(uuid "12d6bf4d-30d6-47e9-a4c0-761fc1b8cb83")
 	)
+	(label "TIM1_CH3N"
+		(at 158.75 40.64 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "15777754-a5e7-496b-8346-4b977ce81d53")
+	)
 	(label "SWDIO"
 		(at 114.3 181.61 180)
 		(fields_autoplaced yes)
@@ -6782,6 +6782,17 @@
 			(justify right bottom)
 		)
 		(uuid "23e71ce4-4581-48cd-9cd0-add76de4aab0")
+	)
+	(label "LED"
+		(at 67.31 140.97 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2b1d2f08-edc7-41ad-8988-c5ab60ece408")
 	)
 	(label "SWCLK"
 		(at 114.3 176.53 180)
@@ -6926,17 +6937,6 @@
 		)
 		(uuid "71860e88-7d12-4d73-9e85-17796b2f051f")
 	)
-	(label "TIM1_CH1"
-		(at 158.75 38.1 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "740f6dec-293a-4699-8bdd-c1434045dbdf")
-	)
 	(label "ADC_B"
 		(at 237.49 104.14 0)
 		(fields_autoplaced yes)
@@ -6947,6 +6947,17 @@
 			(justify left bottom)
 		)
 		(uuid "7f7b8e30-7ed4-4b86-86a4-5ffc6747b67b")
+	)
+	(label "TIM1_CH1N"
+		(at 158.75 139.7 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "83358fa7-e6f3-42ac-88f0-3d0d66166294")
 	)
 	(label "ADC_C"
 		(at 237.49 144.78 0)
@@ -7003,17 +7014,6 @@
 		)
 		(uuid "97b99a8b-83fe-40ea-8358-20968900f67b")
 	)
-	(label "TIM1_CH1N"
-		(at 158.75 40.64 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "99507ef9-5007-47f5-b5ed-7b28cd2693bc")
-	)
 	(label "TIM1_CH2N"
 		(at 158.75 91.44 0)
 		(fields_autoplaced yes)
@@ -7047,17 +7047,6 @@
 		)
 		(uuid "a1d2ff8a-4c60-47b5-ae9e-119c100b94d9")
 	)
-	(label "LED"
-		(at 24.13 176.53 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a2715fea-b600-4b50-9e6a-f25830d6c715")
-	)
 	(label "ADC_C"
 		(at 72.39 118.11 180)
 		(fields_autoplaced yes)
@@ -7068,6 +7057,28 @@
 			(justify right bottom)
 		)
 		(uuid "a5ad7bfc-9924-4c1c-b0d6-5495de531fb9")
+	)
+	(label "TIM1_CH1"
+		(at 158.75 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad1ffa61-3804-40af-8d34-a9f87b89d03f")
+	)
+	(label "TIM1_CH3"
+		(at 158.75 38.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ad3244f4-0c0d-45dc-b9fd-2f92b4989a40")
 	)
 	(label "FB"
 		(at 36.83 41.91 0)
@@ -7090,17 +7101,6 @@
 			(justify right bottom)
 		)
 		(uuid "c5adfd86-e664-423f-97c2-1f8505f53ea6")
-	)
-	(label "TIM1_CH3N"
-		(at 158.75 139.7 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c705184a-ecae-4d58-bf3c-29d146ac3396")
 	)
 	(label "ADC_B"
 		(at 72.39 115.57 180)
