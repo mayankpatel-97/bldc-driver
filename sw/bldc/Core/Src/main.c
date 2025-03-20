@@ -21,7 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "bldc.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -32,31 +32,6 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
-// Motor phase definitions
-typedef enum {
-    PHASE_A = 0,
-    PHASE_B,
-    PHASE_C
-} MotorPhase;
-
-// Motor commutation step definitions
-typedef enum {
-    STEP_1 = 0,  // A-B
-    STEP_2,      // A-C
-    STEP_3,      // B-C
-    STEP_4,      // B-A
-    STEP_5,      // C-A
-    STEP_6       // C-B
-} CommutationStep;
-
-#define PWM_FREQ            20000   // PWM frequency in Hz
-#define PWM_PERIOD          (SystemCoreClock / (2 * PWM_FREQ)) // For center-aligned mode
-#define ADC_SAMPLES         10      // Number of ADC samples for averaging
-#define STARTUP_DUTY        20      // Startup duty cycle (%)
-#define STARTUP_SPEED       500     // Startup speed (commutation delay in ms)
-#define MINIMUM_SPEED       100     // Minimum speed (commutation delay in ms)
-#define COMMUTATION_DELAY   30      // Delay between ADC reading and commutation (in degrees)
-#define ZERO_CROSS_THRESHOLD 100    //
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -73,13 +48,7 @@ TIM_HandleTypeDef htim15;
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
-uint16_t adc_values[3];          // ADC values for each phase
-uint8_t current_step = 0;        // Current commutation step
-uint32_t commutation_time = 0;   // Time since last commutation
-uint32_t commutation_delay = STARTUP_SPEED; // Initial commutation delay
-bool motor_running = false;      // Motor running flag
-bool startup_completed = false;  // Startup sequence completed flag
-uint8_t duty_cycle = 0;          // PWM duty cycle (0-100%)
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -131,6 +100,8 @@ int main(void)
   MX_TIM15_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
+  //BLDC_Init();
+  BLDC_Start(30);
 
   /* USER CODE END 2 */
 
@@ -138,9 +109,13 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	// Application code
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	BLDC_loop();
+
   }
   /* USER CODE END 3 */
 }
