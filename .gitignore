@@ -1,2 +1,8 @@
 # ignore kicad backups
 /hw/bldc/bldc-backups
+
+# settings file
+/sw/bldc/.settings
+
+# Debug file
+/sw/bldc/Debug
