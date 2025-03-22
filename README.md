@@ -34,3 +34,6 @@ There are multiple ways to drive a BLDC motor. The three most common methods are
 - PCB file size: 54x29 mm.
 
 
+![PCB](docs/PCB_front.jpg)
+
+
